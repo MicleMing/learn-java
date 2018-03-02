@@ -10,4 +10,24 @@ public class StringTools {
     int lastIndex = str.lastIndexOf(subStr);
     return lastIndex;
   }
+
+  public String removeChar(String str, int pos) {
+    return str.substring(0, pos) + str.substring(pos + 1);
+  }
+
+  public String firstUpStr(String str) {
+    return str.substring(0, 1).toUpperCase() + str.substring(1);
+  }
+
+  public String reverse(String str) {
+    StringBuffer sBuffer = new StringBuffer(str);
+    return sBuffer.reverse().toString();
+  }
+
+  public void printSplitStr(String str, String delimeter) {
+    String[] temp = str.split(delimeter);
+    for (String s : temp) {
+      System.out.println(s);
+    }
+  }
 }
