@@ -32,5 +32,7 @@ public class App {
         String arr4[] = { "a", "b" };
         String arr5[] = { "b", "c" };
         // System.out.println(arr.union(arr4, arr5));
+        String[] strArr = { "x", "y", "w" };
+        arr.printArray(strArr);
     }
 }

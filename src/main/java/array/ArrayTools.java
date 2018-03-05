@@ -20,6 +20,13 @@ public class ArrayTools {
     }
   }
 
+  public <T> void printArray(T[] arr) {
+    System.out.print("[length: " + arr.length + "] ");
+    for (T ele : arr) {
+      System.out.print(ele + " ");
+    }
+  }
+
   public int[] insertElement(int original[], int element, int index) {
     int len = original.length;
     int destArray[] = new int[len + 1];
