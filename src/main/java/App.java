@@ -27,6 +27,10 @@ public class App {
 
         Integer arr2[] = { 4, 5 };
         Integer arr3[] = { 6, 7 };
-        System.out.println(arr.concat(arr2, arr3));
+        // System.out.println(arr.concat(arr2, arr3));
+
+        String arr4[] = { "a", "b" };
+        String arr5[] = { "b", "c" };
+        // System.out.println(arr.union(arr4, arr5));
     }
 }

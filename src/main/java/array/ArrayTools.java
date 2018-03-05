@@ -3,6 +3,8 @@ package array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
 
 public class ArrayTools {
 
@@ -48,5 +50,17 @@ public class ArrayTools {
     T[] result = Arrays.copyOf(arr1, arr1.length + arr2.length);
     System.arraycopy(arr2, 0, result, arr1.length, arr2.length);
     return result;
+  }
+
+  public String[] union(String str1[], String str2[]) {
+    Set<String> set = new HashSet<String>();
+    for (String s : str1) {
+      set.add(s);
+    }
+    for (String s : str2) {
+      set.add(s);
+    }
+    String[] result = {};
+    return set.toArray(result);
   }
 }
