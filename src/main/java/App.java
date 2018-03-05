@@ -16,13 +16,17 @@ public class App {
         str.printSplitStr("a-b-c", "-");
 
         ArrayTools arr = new ArrayTools();
-        int a[] = { 1, 3, 2, 5 };
-        arr.printArray(arr.insertElement(a, 8, 1));
+        int arr1[] = { 1, 3, 2, 5 };
+        arr.printArray(arr.insertElement(arr1, 8, 1));
 
         arr.addElement("A");
         arr.addElement("B");
         arr.addElement("C");
         arr.addElement("D");
         arr.reverseList();
+
+        Integer arr2[] = { 4, 5 };
+        Integer arr3[] = { 6, 7 };
+        System.out.println(arr.concat(arr2, arr3));
     }
 }

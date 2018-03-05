@@ -44,9 +44,9 @@ public class ArrayTools {
     System.out.println(aList);
   }
 
-  // public void concat(String str1[], String str2[]) {
-  //   ArrayList l1 = new ;
-  //   ArrayList l2 = Arrays.asList(str2);
-
-  // }
+  public <T> T[] concat(T[] arr1, T[] arr2) {
+    T[] result = Arrays.copyOf(arr1, arr1.length + arr2.length);
+    System.arraycopy(arr2, 0, result, arr1.length, arr2.length);
+    return result;
+  }
 }
